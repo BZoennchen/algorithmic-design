@@ -16,7 +16,7 @@ void setup() {
 
 void draw() {
   background(15);
-  noFill();3
+  noFill();
   stroke(255, 60);
   translate(width/2, height/2);
   rotate(dt/10.0f);
