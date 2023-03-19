@@ -1,0 +1,10 @@
+[package]
+name = "perplines"
+version = "0.1.0"
+edition = "2023"
+authors = ["BZoennchen <benedikt.zoennchen@web.de>"]
+description = "Animation of randomly generated and connected perpendicular lines repeated in a circular pattern."
+
+[dependencies]
+nannou = "0.18"
+rand_distr = "0.4.3"
