@@ -1,7 +1,7 @@
 [package]
 name = "perplines"
 version = "0.1.0"
-edition = "2023"
+edition = "2021"
 authors = ["BZoennchen <benedikt.zoennchen@web.de>"]
 description = "Animation of randomly generated and connected perpendicular lines repeated in a circular pattern."
 

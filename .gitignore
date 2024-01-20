@@ -18,6 +18,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# images
+
+*/capture*
+*.mp4
+*.mkv
 
 # Rust
 
