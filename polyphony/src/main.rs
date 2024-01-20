@@ -9,7 +9,7 @@ const NUMBER_OF_NOTES: usize = 21;
 const MAX_RADIUS: f32 = 400.0;
 const OSC_REC_PORT: i32 = 6448;
 const LINE_WEIGHT: f32 = 0.6;
-const MIN_SPEED: f32 = 600.0;
+const MIN_SPEED: f32 = 100.0;
 const BACKGROUND_COLOR: (f32, f32, f32, f32) = (255.0/255.0, 211.0/255.0, 182.0/255.0, 1.0);
 const NOTE_COLOR: (f32, f32, f32, f32) = (255.0/255.0, 139.0/255.0, 148.0/255.0, 1.0);
 //const CIRCLE_COLOR: (f32, f32, f32, f32) = (223.0/255.0, 211.0/255.0, 195.0/255.0, 1.0);
@@ -246,6 +246,7 @@ fn model(_app: &App) -> Model {
 
 fn update(app: &App, model: &mut Model, _update: Update) {
     model.update(app.duration.since_start.as_secs_f32());
+    //print!("fps: {}", app.fps());
 }
 
 fn view(app: &App, model: &Model, frame: Frame) {
