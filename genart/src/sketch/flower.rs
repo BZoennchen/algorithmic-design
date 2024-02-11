@@ -1,8 +1,7 @@
 use nannou::prelude::*;
 use nannou::noise::*;
 
-use crate::lib::particle::Particle;
-use crate::lib::sdf::*;
+use genart::core::particle::Particle;
 
 const WIDTH: u32 = 1280;
 const HEIGHT: u32 = 720;
@@ -22,10 +21,6 @@ pub fn main() {
 struct Model {
     particles: Vec<(Particle, Color)>,
     noise: Perlin,
-}
-
-fn random_vec(w: f32, h: f32) -> Vec2 {
-    vec2((random_f32()-0.5) * w, (random_f32()-0.5) * h)
 }
 
 fn add_particles(particles: &mut Vec<(Particle, Color)>, n: u32, vel: Vec2, color: Color) {

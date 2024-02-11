@@ -1,8 +1,7 @@
 use nannou::prelude::*;
 use nannou::noise::*;
 
-use crate::lib::particle::Particle;
-use crate::lib::sdf::*;
+use genart::core::particle::Particle;
 
 const WIDTH: u32 = 1280;
 const HEIGHT: u32 = 720;

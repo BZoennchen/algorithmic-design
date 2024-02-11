@@ -1,6 +1,5 @@
 mod sketch;
-mod lib;
 
 fn main() {
-    sketch::rects::main();
+    sketch::noise_loop::main(); 
 }

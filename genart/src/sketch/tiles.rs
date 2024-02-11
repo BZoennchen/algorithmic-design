@@ -2,8 +2,9 @@ use nannou::prelude::*;
 use nannou::noise::*;
 use rand::prelude::*;
 
-use crate::lib::particle::Particle;
-use crate::lib::sdf::*;
+use genart::prelude::*;
+use genart::core::particle::Particle;
+use genart::core::sdf::*;
 
 const WIDTH: u32 = 1280;
 const HEIGHT: u32 = 720;
@@ -25,10 +26,6 @@ struct Model {
     particles: Vec<Particle>,
     noise: Perlin,
     distance: SDFUnion,
-}
-
-fn random_vec(w: f32, h: f32) -> Vec2 {
-    vec2((random_f32()-0.5) * w, (random_f32()-0.5) * h)
 }
 
 fn add_particles(particles: &mut Vec<Particle>) {
